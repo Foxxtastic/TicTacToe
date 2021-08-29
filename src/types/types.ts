@@ -24,6 +24,7 @@ export enum CellOwner {
 }
 
 export type BoardCell = Cell & {
+    index: number,
     owner: CellOwner
 }
 

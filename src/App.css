@@ -8,7 +8,7 @@ a::after {
 
 .appbar {
   display: flex;
-  background-color: #ecf0f1;
+  background-color: #95a5a6;
   height: 80px;
   justify-items: center;
   align-items: center;
@@ -17,7 +17,7 @@ a::after {
 }
 
 .appbar-item {
-  background-color: #bdc3c7;
+  background-color: #7f8c8d;
   margin: 10px;
   padding: 10px;
 }
@@ -29,4 +29,13 @@ a::after {
   left: 0px;
   right: 0px;
   background-color: #2ecc71;
+}
+
+.gamecell {
+  background-color: #ecf0f1;
+}
+
+.gamecell:disabled,
+.gamecell[disabled] {
+  background-color: #bdc3c7;
 }

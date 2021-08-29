@@ -9,8 +9,8 @@ type GamePageProps = {
 const newBoard: Board = {
     boardSize: 3,
     boardName: 'New Game',
-    userCells: [{ col: 0, row: 0 }],
-    computerCells: [{ col: 1, row: 0 }]
+    userCells: [],
+    computerCells: []
 }
 
 export function GamePage({ savedBoard }: GamePageProps) {
@@ -20,7 +20,7 @@ export function GamePage({ savedBoard }: GamePageProps) {
 
     return (
         <div className="gamepage">
-            <GameBoard board={board} />
+            <GameBoard startBoard={board} />
         </div>
     )
 }
